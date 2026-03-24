@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'YOUR_GITHUB_REPO_LINK'
+                git 'https://github.com/Pragatheesh-17/fullstack-devops'
             }
         }
 
