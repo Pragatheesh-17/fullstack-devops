@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p id="data"></p>
+
+    <script>
+        fetch('http://localhost:5001/student-details')
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("data").innerText =
+                `Name: ${data.name}, Roll: ${data.roll}`;
+        });
+    </script>
+</body>
+</html>
